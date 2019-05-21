@@ -62,10 +62,10 @@ module.exports = {
         }),
         new copyWebpackPlugin([{
             from: './src/fonts',
-            to: './dist/fonts'
+            to: './fonts'
         },{
             from: './src/images',
-            to: './dist/images'
+            to: './images'
         }])
     ],
     devServer: {

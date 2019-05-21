@@ -1,10 +1,206 @@
 @import "breakpoints"
 @import "../../node_modules/bootstrap/scss/bootstrap-grid"
 @import "../../node_modules/bootstrap/scss/bootstrap-reboot"
-
+@import "../../node_modules/slick-carousel/slick/slick"
 @import "fonts"
 @import "color"
 
+body
+    color: $dark-blue
+    font-family: Gilroy
+    font-weight: 400
+
+.btn
+    text-align: center
+    color: #fff
+    font-family: Montserrat
+    font-size: 1.75rem
+    font-weight: 600
+    letter-spacing: 0.28px
+    border-radius: 45px
+    box-shadow: 0 0 60px rgba(189, 102, 151, 0.5)
+    background-color: $dark-pink
+    background-image: $gradient
+    &:hover
+        color: #fff
+        text-decoration: none
+        background-image: $gradient-reverse
+
+.header
+    position: absolute
+    top: 64px
+    left: 0
+    width: 100%
+    .main_title
+        font-family: Montserrat
+        font-size: 1.5rem
+        font-weight: 400
+        letter-spacing: 0.24px
+        .bold
+            font-weight: 700
+
+.header_section
+    &_content
+        display: flex
+        justify-content: center
+        align-items: flex-start
+        flex-direction: column
+        height: 100vh
+    &_title
+        line-height: 5.125rem
+        font-size: 4.25rem
+        font-weight: 700
+        letter-spacing: 0.68px
+        .dark-pink
+            color: $dark-pink
+    &_paragraph
+        margin-top: 40px
+        font-size: 2.25rem
+        font-weight: 600
+        letter-spacing: 0.36px
+        .pink
+            color: $pink
+    &_btn
+        margin-top: 90px
+        width: 430px
+        height: 90px
+        line-height: 90px
+    &_img
+        position: absolute
+        top: 0
+        right: 0
+        width: 50%
+    &_img_top
+        position: absolute
+        top: 65px
+        left: 45%
+    &_img_left
+        position: absolute
+        bottom: -100px
+        left: -14px
+    &_img_right
+        position: absolute
+        top: 100%
+        right: 0
+
+.section
+    padding: 100px 0
+
+.title
+    color: $pink
+    font-size: 2.25rem
+    font-weight: 600
+    letter-spacing: 0.36px
+    text-transform: uppercase
+
+.result
+    .title
+        margin-bottom: 115px
+    &_point
+        margin-bottom: 55px
+        display: flex
+        &_icon
+            margin-right: 30px
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 90px
+            height: 90px
+            border-radius: 50%
+            border: 1px solid $dark-pink
+            &_img
+                max-width: 50%
+                min-height: 50%
+        &_text
+            display: flex
+            align-items: center
+            font-size: 1.375rem
+            font-weight: 500
+            letter-spacing: 0.22px
+
+.narrator
+    position: relative
+    background-color: $grey
+    &_img
+        position: absolute
+        top: 50%
+        left: 0
+        transform: translateY(-50%)
+        width: 44.45%
+    &_name
+        margin-top: 80px
+        font-size: 3rem
+        font-weight: 700
+        letter-spacing: 0.48px
+    &_position
+        margin-top: 15px
+        font-size: 1.5rem
+        font-weight: 700
+        letter-spacing: 0.24px
+    .social
+        margin-top: 40px
+        &_img
+            margin-right: 30px
+    &_list
+        margin-top: 75px
+        padding: 0
+        font-size: 1.375rem
+        font-weight: 500
+        letter-spacing: 0.22px
+        list-style: none
+        &_point
+            position: relative
+            padding-left: 60px
+            margin-bottom: 45px
+            &::after
+                content: ''
+                position: absolute
+                top: 0
+                left: 0
+                display: block
+                width: 28px
+                height: 22px
+                background-image: url(../images/icons/check.png)
+                background-size: contain
+                background-repeat: no-repeat
+
+.portfolio
+    position: relative
+    overflow: hidden
+    &_img_left
+        z-index: -1
+        position: absolute
+        bottom: 0
+        left: 0
+    &_img_right
+        z-index: -1
+        position: absolute
+        top: 50%
+        right: 0
+        transform: translateY(-50%)
+    &_slider
+        margin: 150px -15px 0
+        .slide
+            padding: 15px
+            &_img
+                width: 100%
+                border-radius: 30px
+        &_arrows
+            margin-top: 45px
+            display: flex
+            justify-content: center
+            .slick-arrow
+                margin: 20px
+                width: 12px
+                height: 20px
+                color: transparent
+                overflow: hidden
+                border: none
+                background-color: transparent
+                background-image: url(../images/back.png)
+                outline: none
+                &.slick-next
+                    transform: scale(-1)
 
 
 @import "media"
