@@ -368,5 +368,71 @@ body
             display: block
             font-size: 1.5rem
 
+.faq
+    position: relative
+    padding-bottom: 200px
+    overflow: hidden
+    .title
+        margin-bottom: 125px
+    
+    &_img_left
+        z-index: -1
+        position: absolute
+        bottom: -160px
+        left: 0
+    &_img_right
+        position: absolute
+        top: 120px
+        right: 0
+
+.questions
+    .question
+        margin-bottom: 70px
+        &_header
+            display: flex
+            justify-content: space-between
+            cursor: pointer
+            .text_wrap
+                display: flex
+
+            .number
+                width: 100px
+                font-family: Carosello
+                color: $dark-pink
+                line-height: 32px
+                font-size: 2rem
+                letter-spacing: 0.32px
+                white-space: nowrap
+            .text
+                display: flex
+                font-size: 1.5rem
+                font-weight: 700
+                letter-spacing: 0.24px
+            .arrow
+                padding-top: 5px
+                transition: 0.3s
+                &.open
+                    transform: rotate(180deg)    
+        .answer
+            display: none
+            padding: 80px 50px 80px 100px
+            color: $blue
+            font-size: 1.125rem
+            font-weight: 500
+            letter-spacing: 0.18px
+
+.footer
+    padding: 50px 0
+    font-size: 1.125rem
+    color: $blue
+    font-weight: 500
+    letter-spacing: 0.18px
+    background-color: #f9f9f9
+    &_link
+        font-size: 1.125rem
+        color: $blue
+        font-weight: 500
+        letter-spacing: 0.18px
+
 
 @import "media"
