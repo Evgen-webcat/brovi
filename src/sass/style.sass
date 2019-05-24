@@ -6,433 +6,516 @@
 @import "color"
 
 body
-    color: $dark-blue
-    font-family: Gilroy
-    font-weight: 400
+	color: $dark-blue
+	font-family: Gilroy
+	font-weight: 400
 
 .btn
-    text-align: center
-    color: #fff
-    font-family: Montserrat
-    font-size: 1.75rem
-    font-weight: 600
-    letter-spacing: 0.28px
-    border-radius: 45px
-    box-shadow: 0 0 60px rgba(189, 102, 151, 0.5)
-    background-color: $dark-pink
-    background-image: $gradient
-    &:hover
-        color: #fff
-        text-decoration: none
-        background-image: $gradient-reverse
+	text-align: center
+	color: #fff
+	font-family: Montserrat
+	font-size: 1.75rem
+	font-weight: 600
+	letter-spacing: 0.28px
+	border-radius: 45px
+	box-shadow: 0 0 60px rgba(189, 102, 151, 0.5)
+	background-color: $dark-pink
+	background-image: $gradient
+	&:hover
+		color: #fff
+		text-decoration: none
+		background-image: $gradient-reverse
 
 .header
-    position: absolute
-    top: 64px
-    left: 0
-    width: 100%
-    .main_title
-        font-family: Montserrat
-        font-size: 1.5rem
-        font-weight: 400
-        letter-spacing: 0.24px
-        .bold
-            font-weight: 700
+	position: absolute
+	top: 64px
+	left: 0
+	width: 100%
+	.main_title
+		font-family: Montserrat
+		font-size: 1.5rem
+		font-weight: 400
+		letter-spacing: 0.24px
+		.bold
+			font-weight: 700
 
 .header_section
-    &_content
-        display: flex
-        justify-content: center
-        align-items: flex-start
-        flex-direction: column
-        height: 100vh
-    &_title
-        line-height: 5.125rem
-        font-size: 4.25rem
-        font-weight: 700
-        letter-spacing: 0.68px
-        .dark-pink
-            color: $dark-pink
-    &_paragraph
-        margin-top: 40px
-        font-size: 2.25rem
-        font-weight: 600
-        letter-spacing: 0.36px
-        .pink
-            color: $pink
-    &_btn
-        margin-top: 90px
-        width: 430px
-        height: 90px
-        line-height: 90px
-    &_img
-        position: absolute
-        top: 0
-        right: 0
-        width: 50%
-    &_img_top
-        position: absolute
-        top: 65px
-        left: 45%
-    &_img_left
-        position: absolute
-        bottom: -100px
-        left: -14px
-    &_img_right
-        position: absolute
-        top: 100%
-        right: 0
+	&_content
+		display: flex
+		justify-content: center
+		align-items: flex-start
+		flex-direction: column
+		height: 100vh
+	&_title
+		line-height: 5.125rem
+		font-size: 4.25rem
+		font-weight: 700
+		letter-spacing: 0.68px
+		.dark-pink
+			color: $dark-pink
+	&_paragraph
+		margin-top: 40px
+		font-size: 2.25rem
+		font-weight: 600
+		letter-spacing: 0.36px
+		.pink
+			color: $pink
+	&_btn
+		margin-top: 90px
+		width: 430px
+		height: 90px
+		line-height: 90px
+	&_img
+		position: absolute
+		top: 0
+		right: 0
+		width: 50%
+	&_img_top
+		z-index: -1
+		position: absolute
+		top: 65px
+		left: 45%
+	&_img_left
+		z-index: -1
+		position: absolute
+		bottom: -100px
+		left: -14px
+	&_img_right
+		z-index: -1
+		position: absolute
+		top: 100%
+		right: 0
 
 .section
-    padding: 100px 0
+	padding: 100px 0
 
 .title
-    color: $pink
-    font-size: 2.25rem
-    font-weight: 600
-    letter-spacing: 0.36px
-    text-transform: uppercase
+	color: $pink
+	font-size: 2.25rem
+	font-weight: 600
+	letter-spacing: 0.36px
+	text-transform: uppercase
 
 .result
-    .title
-        margin-bottom: 115px
-    &_point
-        margin-bottom: 55px
-        display: flex
-        &_icon
-            margin-right: 30px
-            display: flex
-            justify-content: center
-            align-items: center
-            width: 90px
-            height: 90px
-            border-radius: 50%
-            border: 1px solid $dark-pink
-            &_img
-                max-width: 50%
-                min-height: 50%
-        &_text
-            display: flex
-            align-items: center
-            font-size: 1.375rem
-            font-weight: 500
-            letter-spacing: 0.22px
+	.title
+		margin-bottom: 115px
+	&_point
+		margin-bottom: 55px
+		display: flex
+		&_icon
+			margin-right: 30px
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 90px
+			height: 90px
+			border-radius: 50%
+			border: 1px solid $dark-pink
+			&_img
+				max-width: 50%
+				min-height: 50%
+		&_text
+			display: flex
+			align-items: center
+			font-size: 1.375rem
+			font-weight: 500
+			letter-spacing: 0.22px
 
 .narrator
-    position: relative
-    box-shadow: inset 0 0 59px rgba(0, 0, 0, 0.03)
-    background-color: $grey
-    &_img
-        position: absolute
-        top: 50%
-        left: 0
-        transform: translateY(-50%)
-        width: 44.45%
-    &_name
-        margin-top: 80px
-        font-size: 3rem
-        font-weight: 700
-        letter-spacing: 0.48px
-    &_position
-        margin-top: 15px
-        font-size: 1.5rem
-        font-weight: 700
-        letter-spacing: 0.24px
-    .social
-        margin-top: 40px
-        &_img
-            margin-right: 30px
-    &_list
-        margin-top: 75px
-        padding: 0
-        font-size: 1.375rem
-        font-weight: 500
-        letter-spacing: 0.22px
-        list-style: none
-        &_point
-            position: relative
-            padding-left: 60px
-            margin-bottom: 45px
-            &::after
-                content: ''
-                position: absolute
-                top: 0
-                left: 0
-                display: block
-                width: 28px
-                height: 22px
-                background-image: url(../images/icons/check.png)
-                background-size: contain
-                background-repeat: no-repeat
+	position: relative
+	box-shadow: inset 0 0 59px rgba(0, 0, 0, 0.03)
+	background-color: $grey
+	&_img
+		position: absolute
+		top: 50%
+		left: 0
+		transform: translateY(-50%)
+		width: 44.45%
+	&_name
+		margin-top: 80px
+		font-size: 3rem
+		font-weight: 700
+		letter-spacing: 0.48px
+	&_position
+		margin-top: 15px
+		font-size: 1.5rem
+		font-weight: 700
+		letter-spacing: 0.24px
+	.social
+		margin-top: 40px
+		&_link:hover
+			opacity: 0.7
+			text-decoration: none
+		&_img
+			margin-right: 30px
+	&_list
+		margin-top: 75px
+		padding: 0
+		font-size: 1.375rem
+		font-weight: 500
+		letter-spacing: 0.22px
+		list-style: none
+		&_point
+			position: relative
+			padding-left: 60px
+			margin-bottom: 45px
+			&::after
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				display: block
+				width: 28px
+				height: 22px
+				background-image: url(../images/icons/check.png)
+				background-size: contain
+				background-repeat: no-repeat
 
 .portfolio
-    position: relative
-    overflow: hidden
-    &_img_left
-        z-index: -1
-        position: absolute
-        bottom: 0
-        left: 0
-    &_img_right
-        z-index: -1
-        position: absolute
-        top: 50%
-        right: 0
-        transform: translateY(-50%)
-    &_slider
-        margin: 150px -15px 0
-        .slide
-            padding: 15px
-            &_img
-                width: 100%
-                border-radius: 30px
-        &_arrows
-            margin-top: 45px
-            display: flex
-            justify-content: center
-            .slick-arrow
-                margin: 20px
-                width: 12px
-                height: 20px
-                color: transparent
-                overflow: hidden
-                border: none
-                background-color: transparent
-                background-image: url(../images/back.png)
-                outline: none
-                &.slick-next
-                    transform: scale(-1)
+	position: relative
+	overflow: hidden
+	&_img_left
+		z-index: -1
+		position: absolute
+		bottom: 0
+		left: 0
+	&_img_right
+		z-index: -1
+		position: absolute
+		top: 50%
+		right: 0
+		transform: translateY(-50%)
+		width: 40.3%
+	&_slider
+		margin: 150px -15px 0
+		.slick-slide
+			transition: 0.3s
+			&.slick-current + .slick-active
+				.slide
+					padding: 0
+					opacity: 1
+		.slide
+			padding: 30px
+			transition: 0.3s
+			opacity: 0.7
+			&_img
+				width: 100%
+				border-radius: 30px
+		&_arrows
+			margin-top: 45px
+			display: flex
+			justify-content: center
+			.slick-disabled
+				visibility: hidden
+				opacity: 0
+			.slick-arrow
+				margin: 20px
+				width: 12px
+				height: 20px
+				color: transparent
+				overflow: hidden
+				border: none
+				background-color: transparent
+				background-image: url(../images/back.png)
+				outline: none
+				&.slick-next
+					transform: scale(-1)
 
 .about
-    position: relative
-    .title
-        margin-bottom: 80px
-    &_block
-        margin-bottom: 30px
-        padding: 30px 20px
-        display: flex
-        flex-direction: column
-        justify-content: center
-        height: calc(100% - 30px)
-        text-align: center
-        border-radius: 30px
-        border: 2px solid rgba(28, 42, 94, .1)
-        &_text
-            margin-bottom: 14px
-            font-size: 1.375rem
-            font-weight: 500
-            letter-spacing: 0.22px
-        &_time
-            display: flex
-            justify-content: center
-            align-items: center
-            &_number
-                margin-right: 10px
-                width: 34px
-                height: 34px
-                line-height: 34px
-                color: #fff
-                font-size: 1.25rem
-                font-weight: 600
-                letter-spacing: 0.2px
-                border-radius: 50%
-                background-color: $dark-pink
-                background-image: $gradient
-            &_text
-                color: $dark-pink
-                font-size: 1.25rem
-                font-weight: 700
-                letter-spacing: 0.2px
-    &_bg
-        z-index: -1
-        position: absolute
-        bottom: 0
-        right: 0
+	position: relative
+	.title
+		margin-bottom: 80px
+	&_block
+		margin-bottom: 30px
+		padding: 30px 20px
+		display: flex
+		flex-direction: column
+		justify-content: center
+		height: calc(100% - 30px)
+		text-align: center
+		border-radius: 30px
+		border: 2px solid rgba(28, 42, 94, .1)
+		&_text
+			margin-bottom: 14px
+			font-size: 1.375rem
+			font-weight: 500
+			letter-spacing: 0.22px
+		&_time
+			display: flex
+			justify-content: center
+			align-items: center
+			&_number
+				margin-right: 10px
+				width: 34px
+				height: 34px
+				line-height: 34px
+				color: #fff
+				font-size: 1.25rem
+				font-weight: 600
+				letter-spacing: 0.2px
+				border-radius: 50%
+				background-color: $dark-pink
+				background-image: $gradient
+			&_text
+				color: $dark-pink
+				font-size: 1.25rem
+				font-weight: 700
+				letter-spacing: 0.2px
+	&_bg
+		z-index: -1
+		position: absolute
+		bottom: 0
+		right: 0
 .reviews
-    box-shadow: inset 0 0 59px rgba(0, 0, 0, 0.03)
-    background-color: $grey
-    .title
-        margin-bottom: 100px
+	box-shadow: inset 0 0 59px rgba(0, 0, 0, 0.03)
+	background-color: $grey
+	.title
+		margin-bottom: 100px
 
 .review_block
-    font-size: 1.125rem
-    font-weight: 500
-    letter-spacing: 0.18px
-    &_text
-        position: relative
-        margin-bottom: 45px
-        padding: 90px 45px
-        border-radius: 30px
-        background: #fff
-        .quote
-            position: absolute
-            top: 0
-            left: 45px
-            transform: translateY(-50%)
-    &_name
-        margin-bottom: 15px
-        text-align: center
-        color: $dark-pink
-    &_img
-        margin: 0 auto
-        display: block
-        width: 70px
-        height: 70px
-        object-fit: cover
-        border-radius: 50%
+	font-size: 1.125rem
+	font-weight: 500
+	letter-spacing: 0.18px
+	&_text
+		position: relative
+		margin-bottom: 45px
+		padding: 90px 45px
+		border-radius: 30px
+		background: #fff
+		.quote
+			position: absolute
+			top: 0
+			left: 45px
+			transform: translateY(-50%)
+	&_name
+		margin-bottom: 15px
+		text-align: center
+		color: $dark-pink
+	&_img
+		margin: 0 auto
+		display: block
+		width: 70px
+		height: 70px
+		object-fit: cover
+		border-radius: 50%
 .tariff
-    position: relative
-    overflow: hidden
-    .title
-        margin-bottom: 100px
-    &_img_left
-        z-index: -1
-        position: absolute
-        top: 150px
-        left: 0
-    &_img_right
-        z-index: -1
-        position: absolute
-        bottom: 0
-        right: 0
+	position: relative
+	overflow: hidden
+	.title
+		margin-bottom: 100px
+	&_img_left
+		z-index: -1
+		position: absolute
+		top: 150px
+		left: 0
+	&_img_right
+		z-index: -1
+		position: absolute
+		bottom: 0
+		right: 0
 
 .tariff_blocks
-    display: flex
-    justify-content: space-between
-    .tariff_block
-        padding: 50px 60px
-        display: flex
-        flex-direction: column
-        justify-content: space-between
-        width: 30%
-        text-align: center
-        color: #fff
-        border-radius: 30px
-        &:nth-child(1)
-            background-color: $dark-blue
-        &:nth-child(2)
-            transform: scale(1.177)
-            background-color: #f9f9f9
-            background-image: linear-gradient(13deg, #c733a6 0%, #ff7a9c 100%)
-            .tariff_block_price .price
-                color: #fff
-            .tariff_block_list_point::after
-                background-image: url(../images/icons/check-white.png)
-            .tariff_block_btn
-                color: $dark-pink
-                background-color: #fff
-                background-image: none
-                &:hover
-                    color: #fff
-                    background-color: $pink
-        &:nth-child(3)
-            color: $dark-blue
-            background-color: #f9f9f9
-        &_title
-            margin-bottom: 50px
-            font-size: 2.75rem
-            font-weight: 700
-            letter-spacing: 0.44px
-        &_list
-            padding: 0
-            text-align: left
-            font-size: 1.375rem
-            font-weight: 500
-            letter-spacing: 0.22px
-            list-style: none
-            &_point
-                position: relative
-                padding-left: 60px
-                margin-bottom: 20px
-                &::after
-                    content: ''
-                    position: absolute
-                    top: 0
-                    left: 0
-                    display: block
-                    width: 28px
-                    height: 22px
-                    background-image: url(../images/icons/check.png)
-                    background-size: contain
-                    background-repeat: no-repeat
-        &_price
-            font-size: 1.5rem
-            font-weight: 700
-            letter-spacing: 0.24px
-            .price
-                color: $dark-pink
-                font-size: 2.25rem
-                letter-spacing: 0.36px
-        &_btn
-            padding: 20px 10px
-            display: block
-            font-size: 1.5rem
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	.tariff_block
+		padding: 50px 60px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		width: 30%
+		text-align: center
+		color: #fff
+		border-radius: 30px
+		&:nth-child(1)
+			background-color: $dark-blue
+		&:nth-child(2)
+			transform: scale(1.177)
+			background-color: #f9f9f9
+			background-image: linear-gradient(13deg, #c733a6 0%, #ff7a9c 100%)
+			.tariff_block_price .price
+				color: #fff
+			.tariff_block_list_point::after
+				background-image: url(../images/icons/check-white.png)
+			.tariff_block_btn
+				color: $dark-pink
+				background-color: #fff
+				background-image: none
+				&:hover
+					color: #fff
+					background-color: $pink
+		&:nth-child(3)
+			color: $dark-blue
+			background-color: #f9f9f9
+		&_title
+			margin-bottom: 50px
+			font-size: 2.75rem
+			font-weight: 700
+			letter-spacing: 0.44px
+		&_list
+			padding: 0
+			text-align: left
+			font-size: 1.375rem
+			font-weight: 500
+			letter-spacing: 0.22px
+			list-style: none
+			&_point
+				position: relative
+				padding-left: 60px
+				margin-bottom: 20px
+				&::after
+					content: ''
+					position: absolute
+					top: 0
+					left: 0
+					display: block
+					width: 28px
+					height: 22px
+					background-image: url(../images/icons/check.png)
+					background-size: contain
+					background-repeat: no-repeat
+		&_price
+			font-size: 1.5rem
+			font-weight: 700
+			letter-spacing: 0.24px
+			.price
+				color: $dark-pink
+				font-size: 2.25rem
+				letter-spacing: 0.36px
+		&_btn
+			padding: 20px 10px
+			display: block
+			font-size: 1.5rem
 
 .faq
-    position: relative
-    padding-bottom: 200px
-    overflow: hidden
-    .title
-        margin-bottom: 125px
-    
-    &_img_left
-        z-index: -1
-        position: absolute
-        bottom: -160px
-        left: 0
-    &_img_right
-        position: absolute
-        top: 120px
-        right: 0
+	position: relative
+	padding-bottom: 200px
+	overflow: hidden
+	.title
+		margin-bottom: 125px
+	
+	&_img_left
+		z-index: -1
+		position: absolute
+		bottom: -160px
+		left: 0
+	&_img_right
+		position: absolute
+		top: 120px
+		right: 0
+		width: 47.3%
 
 .questions
-    .question
-        margin-bottom: 70px
-        &_header
-            display: flex
-            justify-content: space-between
-            cursor: pointer
-            .text_wrap
-                display: flex
+	.question
+		margin-bottom: 70px
+		&_header
+			display: flex
+			justify-content: space-between
+			cursor: pointer
+			.text_wrap
+				display: flex
 
-            .number
-                width: 100px
-                font-family: Carosello
-                color: $dark-pink
-                line-height: 32px
-                font-size: 2rem
-                letter-spacing: 0.32px
-                white-space: nowrap
-            .text
-                display: flex
-                font-size: 1.5rem
-                font-weight: 700
-                letter-spacing: 0.24px
-            .arrow
-                padding-top: 5px
-                transition: 0.3s
-                &.open
-                    transform: rotate(180deg)    
-        .answer
-            display: none
-            padding: 80px 50px 80px 100px
-            color: $blue
-            font-size: 1.125rem
-            font-weight: 500
-            letter-spacing: 0.18px
+			.number
+				width: 100px
+				font-family: Carosello
+				color: $dark-pink
+				line-height: 32px
+				font-size: 2rem
+				letter-spacing: 0.32px
+				white-space: nowrap
+			.text
+				display: flex
+				font-size: 1.5rem
+				font-weight: 700
+				letter-spacing: 0.24px
+			.arrow
+				padding-top: 5px
+				transition: 0.3s
+				&.open
+					transform: rotate(180deg)    
+		.answer
+			display: none
+			padding: 80px 50px 80px 100px
+			color: $blue
+			font-size: 1.125rem
+			font-weight: 500
+			letter-spacing: 0.18px
 
 .footer
-    padding: 50px 0
-    font-size: 1.125rem
-    color: $blue
-    font-weight: 500
-    letter-spacing: 0.18px
-    background-color: #f9f9f9
-    &_link
-        font-size: 1.125rem
-        color: $blue
-        font-weight: 500
-        letter-spacing: 0.18px
+	padding: 50px 0
+	font-size: 1.125rem
+	color: $blue
+	font-weight: 500
+	letter-spacing: 0.18px
+	background-color: #f9f9f9
+	&_text-right
+		text-align: right
+	&_link
+		font-size: 1.125rem
+		color: $blue
+		font-weight: 500
+		letter-spacing: 0.18px
 
+.locker
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-color: rgba(0, 0, 0, .7)
+
+.modal
+	display: none
+	position: fixed
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	padding: 30px 50px
+	width: 500px
+	text-align: center
+	border-radius: 30px
+	background-color: #fff
+	.close
+		position: absolute
+		top: -40px
+		right: 0
+		display: block
+		width: 30px
+		height: 30px
+		&::before,
+		&::after
+			content: ''
+			position: absolute
+			top: 50%
+			left: 50%
+			display: block
+			width: 30px
+			height: 2px
+			background-color: #fff
+		&::before
+			transform: translate(-50%, -50%) rotate(45deg)
+		&::after
+			transform: translate(-50%, -50%) rotate(-45deg)
+	&_title
+		margin-bottom: 20px
+		font-size: 2rem
+	.input
+		margin-bottom: 20px
+		padding: 10px 30px
+		width: 100%
+		font-size: 1.5rem
+		border-radius: 30px
+		border: 1px solid $dark-blue
+		outline: none
+	.btn
+		margin-top: 30px
+		padding: 20px 30px
+		border: none
+		outline: none
+	.thanks
+		display: none
+		padding-top: 30px
+		font-size: 1.375rem
 
 @import "media"

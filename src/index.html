@@ -18,7 +18,7 @@
     <section class="header_section">
         <div class="container">
             <div class="row">
-                <div class="col-xl-6 col-12">
+                <div class="col-lg-6 col-12">
                     <div class="header_section_content">
                         <h2 class="header_section_title">Научим зарабатывать от <span class="dark-pink">600$</span> в
                             месяц</h2>
@@ -30,10 +30,10 @@
                 </div>
             </div>
         </div>
-        <img src="images/header-bg.png" alt="img" class="header_section_img">
+        <img src="images/header-bg.png" alt="img" class="header_section_img d-none d-lg-block">
         <img src="images/header-img_top.png" alt="img" class="header_section_img_top">
-        <img src="images/header-img_left.png" alt="img" class="header_section_img_left">
-        <img src="images/header-img_right.png" alt="img" class="header_section_img_right">
+        <img src="images/header-img_left.png" alt="img" class="header_section_img_left d-none d-md-block">
+        <img src="images/header-img_right.png" alt="img" class="header_section_img_right d-none d-md-block">
     </section>
     <section class="section result">
         <div class="container">
@@ -91,7 +91,7 @@
         </div>
     </section>
     <section class="section narrator">
-        <img src="images/norrator.png" alt="narrator" class="narrator_img">
+        <img src="images/norrator.png" alt="narrator" class="narrator_img d-none d-lg-block">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 offset-lg-6 col-12 offset-0">
@@ -99,10 +99,18 @@
                     <h3 class="narrator_name">Ирина Соболь</h3>
                     <p class="narrator_position">Мастер-бровист, визажист, чемпионка РБ по макияжу</p>
                     <div class="social">
-                        <img src="images/icons/instagram.png" alt="instagram" class="social_img">
-                        <img src="images/icons/vk.png" alt="vk" class="social_img">
-                        <img src="images/icons/youtube.png" alt="youtube" class="social_img">
-                        <img src="images/icons/facebook.png" alt="facebook" class="social_img">
+                        <a href="#" class="social_link" target="_blank">
+                            <img src="images/icons/instagram.png" alt="instagram" class="social_img">
+                        </a>
+                        <a href="#" class="social_link" target="_blank">
+                            <img src="images/icons/vk.png" alt="vk" class="social_img">
+                        </a>
+                        <a href="#" class="social_link" target="_blank">
+                            <img src="images/icons/youtube.png" alt="youtube" class="social_img">
+                        </a>
+                        <a href="#" class="social_link" target="_blank">
+                            <img src="images/icons/facebook.png" alt="facebook" class="social_img">
+                        </a>
                     </div>
                     <ul class="narrator_list">
                         <li class="narrator_list_point">Окончила школу Виктории Макейчик, прошла около 20
@@ -360,7 +368,7 @@
         <div class="container">
             <h2 class="title">[ОТЗЫВЫ ПРОХОДИВШИХ]</h2>
             <div class="row">
-                <div class="col-xl-4 col-md-12">
+                <div class="col-md-4 col-12">
                     <div class="review_block">
                         <div class="review_block_text">
                             Lorem ipsum dolor sit amet, sanctus oporteat
@@ -374,7 +382,7 @@
                         <img src="images/photo.jpg" alt="photo" class="review_block_img">
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-12">
+                <div class="col-md-4 col-12">
                     <div class="review_block">
                         <div class="review_block_text">
                             Lorem ipsum dolor sit amet, sanctus oporteat
@@ -388,7 +396,7 @@
                         <img src="images/photo.jpg" alt="photo" class="review_block_img">
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-12">
+                <div class="col-md-4 col-12">
                     <div class="review_block">
                         <div class="review_block_text">
                             Lorem ipsum dolor sit amet, sanctus oporteat
@@ -557,7 +565,7 @@
             </div>
         </div>
         <img src="images/faq_img_left.png" alt="background" class="faq_img_left">
-        <img src="images/faq_img_right.png" alt="images" class="faq_img_right">
+        <img src="images/faq_img_right.png" alt="images" class="faq_img_right d-none d-lg-block">
     </section>
     <footer class="footer">
         <div class="container">
@@ -567,13 +575,25 @@
                     Платежная информация<br />
                     ИП Петров П.П. УНП 123123123
                 </div>
-                <div class="col-auto">
+                <div class="col-auto footer_text-right">
                     Разработано<br />
                     лидогенератор <a class="footer_link" href="http://webcat.by/" target="_blank">webcat.by</a>
                 </div>
             </div>
         </div>
     </footer>
+    <div class="locker"></div>
+    <div class="modal">
+        <a href="#" class="close"></a>
+        <h3 class="modal_title"></h3>
+        <form id="form">
+            <input class="input" type="text" name="name" placeholder="Ваше имя" />
+            <input class="input phone_input" type="text" name="phone" placeholder="Ваш телефон" autocomplete="off" required />
+            <input class="input tariff_input" type="hidden" name="tariff" />
+            <button class="btn">Выбрать тариф</button>
+        </form>
+        <p class="thanks">Спасибо, ваша заявка принята.</p>
+    </div>
 </body>
 
 </html>

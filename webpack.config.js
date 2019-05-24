@@ -66,6 +66,9 @@ module.exports = {
         },{
             from: './src/images',
             to: './images'
+        },{
+            from: './src/php',
+            to: './php'
         }])
     ],
     devServer: {
